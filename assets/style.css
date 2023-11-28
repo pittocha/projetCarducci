@@ -79,6 +79,12 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
+h3 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 26px;
+}
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
@@ -101,7 +107,7 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active-tag/*renomer le selecteur css pour que l'élément sélectionner soit afficher en doré*/, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000;/*pour l'accessibilité jai choisit d'afficher le texte en noir même quand le texte est surligner*/
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
