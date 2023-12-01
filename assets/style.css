@@ -85,6 +85,18 @@ h3 {
 h6 {
 	font-size: 26px;
 }
+.logo-insta img {/*définition d'une largeur et hauteur pour les photo*/
+	width: 20px;
+	height: 20px;
+}
+.d-block img {/*définition d'une largeur et hauteur pour les photo*/
+	width: 1920px;
+	height: 888px;
+}
+.nina-pic img {/*définition d'une largeur et hauteur pour les photo*/
+	width: 560px;
+	height: 558px;
+}
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
