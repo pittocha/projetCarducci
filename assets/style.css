@@ -79,13 +79,16 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
+.about-me__introduction {
+	font-size: 18px;
+}
 h3 {
 	font-size: 26px;
 }
 h6 {
 	font-size: 26px;
 }
-.logo-insta img {/*définition d'une largeur et hauteur pour les photo*/
+.logo-insta {/*définition d'une largeur et hauteur pour les photo*/
 	width: 20px;
 	height: 20px;
 }
