@@ -92,13 +92,13 @@ h6 {
 	width: 20px;
 	height: 20px;
 }
-.d-block img {/*définition d'une largeur et hauteur pour les photo*/
-	width: 1920px;
-	height: 888px;
+.d-block {/*définition d'une largeur et hauteur pour les photo*/
+	max-width: 1920px;
+	max-height: 888px;
 }
-.nina-pic img {/*définition d'une largeur et hauteur pour les photo*/
-	width: 560px;
-	height: 558px;
+.nina-pic {/*définition d'une largeur et hauteur pour les photo*/
+	max-width: 560px;
+	max-height: 558px;
 }
 .about-me__introduction {
 	font-family: 'Spectral';
