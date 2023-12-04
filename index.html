@@ -6,6 +6,33 @@
 	<meta http-equiv="Cache-Control" content="max-age=15552000, must-revalidate"><!--balise meta de mise en cache-->
 	<meta name="description" content="Photographe professionnel en Île-de-France, spécialisé dans les shootings d'entreprise, portraits, mariages et événements.
 	Retouches photo et création d'albums pour immortaliser vos moments précieux avec un regard expert."><!--meta description pour les moteurs de recherche-->
+	<!--balise meta schema.org pour google-->
+	<meta itemprop="name" content="Nina Carducci photographe professionnel" />
+	<meta itemprop="description" content="Photographe professionnel en Île-de-France, spécialisé dans les shootings d'entreprise, portraits, mariages et événements.
+	Retouches photo et création d'albums pour immortaliser vos moments précieux avec un regard expert." />
+	<!--balise meta open graph pour facebook et instagram-->
+	<meta property="og:title" content="Nina Carducci photographe professionnel">
+	<meta property="og:description" content="Photographe professionnel en Île-de-France, spécialisé dans les shootings d'entreprise, portraits, mariages et événements.
+	Retouches photo et création d'albums pour immortaliser vos moments précieux avec un regard expert.">
+	<meta property="og:image" content="assets/images/instagram.png">
+	<meta property="og:url" content="https://pittocha.github.io/projetCarducci/">
+	<meta property="og:type" content="website">
+	<!--balise meta twitter card pour twitter-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@toncompteTwitter">
+	<meta name="twitter:title" content="Nina Carducci photographe professionnel">
+	<meta name="twitter:description" content="Photographe professionnel en Île-de-France, spécialisé dans les shootings d'entreprise, portraits, mariages et événements.
+	Retouches photo et création d'albums pour immortaliser vos moments précieux avec un regard expert.">
+	<meta name="twitter:image" content="assets/images/instagram.png">
+	<!--balise meta pour linkedin-->
+	<meta property="og:title" content="Nina Carducci photographe professionnel">
+	<meta property="og:description" content="Photographe professionnel en Île-de-France, spécialisé dans les shootings d'entreprise, portraits, mariages et événements.
+	Retouches photo et création d'albums pour immortaliser vos moments précieux avec un regard expert.">
+	<meta property="og:image" content="assets/images/instagram.png">
+	<meta property="og:url" content="https://pittocha.github.io/projetCarducci/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Nina Carducci photographe professionnel">
+	<meta itemprop="image" content="assets/images/instagram.png" />
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,11 +89,21 @@
 	<div class="picture left">
 		<img src="./assets/images/nina.webp" class="nina-pic" alt="photo de Nina Carducci"><!--ajout d'une description pour les photos, changement du format et redimention de la photo-->
 	</div>
-	<div id="about-me">
+	<div id="about-me" itemscope itemtype="https://schema.org/Photograph"><!--ajout des micro données pour le referencement local-->
 		<h2 class="about-me__title">A propos de moi</h2>
-		<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3><!--inversion des titre h3 et h6 pour l'accessibilité et les font size ont été changé dans le css pour garder la mise en page-->
+		<h3 class="about-me__introduction" itemprop="description">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3><!--inversion des titre h3 et h6 pour l'accessibilité et les font size ont été changé dans le css pour garder la mise en page-->
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+			<h2 itemprop="name">Nina Carducci</h2>
+			<p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				Adresse : <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>, <span itemprop="addressLocality">Bordeaux</span>,
+				<span itemprop="postalCode">33200</span>, <span itemprop="addressCountry">France</span>
+			</p>
+			<p itemprop="telephone">Téléphone : 05 56 67 78 89</p>
+			<p itemprop="openingHours">Du lundi au vendredi : <time itemprop="opens" content="10:00">10 h</time> à <time itemprop="closes" content="19:00">19 h</time></p>
+			<div class="site-link" itemprop="url">
+				Site Web : <a href="URL du site">https://pittocha.github.io/projetCarducci/</a>
+			</div>						
 	</div>
 </div>
 <div id="gallery">
@@ -96,35 +133,35 @@
 <div id="services"><!--réorganisation des titres pour le SEO et l'accessibilité dans cette section-->
 	<h2 class="title">Mes services</h2>
 	<div class="container">
-		<div class="service">
-			<div class="service__description">
-				<h3>Shooting photo</h3>
+		<div class="service" itemscope itemtype="https://schema.org/Service"><!--ajout des micro données pour le referencement local-->
+			<div class="service__description" itemprop="description">
+				<h3 itemprop="name">Shooting photo</h3>
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
-			<div class="service__price">
-				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span>
+			<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+				<h4 itemprop="price">350€/demi journée</h4>
+				<span itemprop="priceCurrency" content="EUR">Matériel, déplacement inclus</span>
 			</div>
 
 		</div>
 		<div class="service">
-			<div class="service__description">
-				<h3>Retouches</h3>
+			<div class="service__description" itemprop="description">
+				<h3 itemprop="name">Retouches</h3>
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 			</div>
-			<div class="service__price">
-				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
+			<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+				<h4 itemprop="price">50€/photo</h4>
+				<span itemprop="priceCurrency" content="EUR">2 AR par photo</span>
 			</div>
 		</div>
 		<div class="service">
-			<div class="service__description">
-				<h3>Album photos</h3>
+			<div class="service__description" itemprop="description">
+				<h3 itemprop="name">Album photos</h3>
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 			</div>
-			<div class="service__price">
-				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
+			<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+				<h4 itemprop="price">400€ album A4</h4>
+				<span itemprop="priceCurrency" content="EUR">30 pages recto/verso</span>
 			</div>
 		</div>
 	</div>
