@@ -43,7 +43,7 @@ body {
 }
 .site-link {
 	display: none;
-}
+}/*j'ai choisit de cacher le lien vers le site dans le css car il me paraissait inutile de l'affichait*/
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -62,16 +62,13 @@ body {
 	left: 0;
 	z-index: -1;
 }
-
 .picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
 }
-
 .picture img {
 	width: 100%;
-
 }
 #about-me {
 	flex: 2
