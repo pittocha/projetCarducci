@@ -138,21 +138,17 @@
         $(".item-column img.gallery-item[data-gallery-tag='" + activeTag + "']").each(function() {
           imagesCollection.push($(this));
         });
-      }
-    
+      }    
       let index = 0,
-          prev = null;
-    
+          prev = null;    
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i;
         }
-      });
-    
+      });    
       prev = imagesCollection[index - 1] || imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(prev).attr("src"));
-    },
-    
+    },    
     nextImage() {
       let activeImage = null;
       $(".gallery-item").each(function() {
